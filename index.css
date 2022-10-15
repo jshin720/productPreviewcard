@@ -1,5 +1,5 @@
 html {
-  background: white;
+  background: hsl(30, 38%, 92%);
   height: 100%;
   width: 100%;
 }
@@ -8,17 +8,28 @@ html {
   margin: 50%;
 } */
 
+@font-face {
+  font-family: 'MontReg';
+  src: url('https://fonts.google.com/specimen/Montserrat');
+}
+
+/* @font-face {
+  font-family: 'Fraunces';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+} */
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   /* [class*="col-"] {
     width: 100%;
   } */
-  body {
-    background-color: green;
+  .card-container {
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 5%;
     display: flex;
     /* justify-content: space-evenly; */
     flex-direction: row;
-    height: 75vh;
+    /* height: vh; */
     width: 90vw;
     display: inline-block;
     border: 2px solid black;
@@ -26,24 +37,56 @@ html {
 
   .img-container {
     width: 100%;
-    height: 40%;
+    height: 60%;
     /* border: 2px solid black; */
   }
 
   .image-mobile {
     display: block;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     object-fit: fill;
     width: 100%;
     height: 100%;
   }
+  
   .desktop-img {
     display: none;
+  }
+
+  h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .3rem;
+    font-size: small;
+    margin: 3% 5%;
+    border: 1px solid blue;
+  }
+
+  h1 {
+    font-family: "Fraunces, serif";
+    margin: 2% 5%;
+    /* padding: 5%; */
+    border: 2px solid green;
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+
+  .perfume-description {
+    margin: 5%;
+    border: 2px solid black; 
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: .9em;
+    line-height: 1.6;
   }
 
 }
 
 @media only screen and (min-width: 769px) {
-  body {
+  .card-container {
     background-color: #de3163;
   }
   .image-mobile {
