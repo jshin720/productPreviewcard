@@ -29,7 +29,7 @@ html {
     display: flex;
     /* justify-content: space-evenly; */
     flex-direction: row;
-    /* height: vh; */
+    /* height: 75vh; */
     width: 90vw;
     display: inline-block;
     border: 2px solid black;
@@ -65,12 +65,12 @@ html {
   }
 
   h1 {
-    font-family: "Fraunces, serif";
     margin: 2% 5%;
     /* padding: 5%; */
     border: 2px solid green;
+    font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .perfume-description {
@@ -82,6 +82,32 @@ html {
     font-size: .9em;
     line-height: 1.6;
   }
+
+  .price-container {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+  }
+
+  .sale-price{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    margin: 5%;
+    border: 2px solid red;
+  }
+
+  .original-price {
+    color: hsl(228, 12%, 48%);
+    font-size: .7em;
+    font-family: 'Montserrat', serif;
+    text-decoration: line-through;
+    /* margin: 5%; */
+    padding: 5% 0;
+    border: 2px solid green;
+  }
+
 
 }
 
