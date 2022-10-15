@@ -25,12 +25,12 @@ html {
   } */
   .card-container {
     background-color: hsl(0, 0%, 100%);
-    margin: 2%;
+    margin: 1em .2em;
     border-radius: 10px;
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-evenly; */
-    flex-direction: row;
-    height: 100vh;
+    /* flex-direction: row; */
+    height: 95vh;
     /* width: 90vw; */
     display: inline-block;
     border: 2px solid black;
@@ -46,7 +46,7 @@ html {
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     height: 100%;
   }
@@ -61,12 +61,12 @@ html {
     color: hsl(228, 12%, 48%);
     letter-spacing: 0.3rem;
     font-size: small;
-    margin: 3% 5%;
+    margin: 1em 1.2em;
     /* border: 1px solid blue; */
   }
 
   h1 {
-    margin: 2% 5%;
+    margin: .5em .4em;
     /* padding: 5%; */
     /* border: 2px solid green; */
     font-family: "Fraunces", serif;
@@ -75,7 +75,7 @@ html {
   }
 
   .perfume-description {
-    margin: 5%;
+    margin: 1.2em;
     /* border: 2px solid black; */
     color: hsl(228, 12%, 48%);
     font-family: "Montserrat", serif;
@@ -85,7 +85,7 @@ html {
   }
 
   .price-container {
-    margin: 2% 5% 0;
+    margin: 1em 1em 0;
     display: flex;
     flex-direction: row;
     /* border: 2px solid green; */
@@ -104,14 +104,14 @@ html {
     font-size: 0.7em;
     font-family: "Montserrat", serif;
     text-decoration: line-through;
-    margin: 5%;
+    margin: 1.2em;
     /* padding: 5% 0; */
     /* border: 2px solid green; */
   }
 
   .block {
   display: block;
-  margin: 2% 5%;
+  margin: 1em 1.2em .5em;
   width: 90%;
   border: none;
   border-radius: 10px;
@@ -124,19 +124,114 @@ html {
   font-family: "Montserrat", serif;
    border: 2px solid green;
   }
+  footer {
+    margin: 0 1em;
+  }
 }
 
 @media only screen and (min-width: 769px) {
   .card-container {
-    background-color: #de3163;
-  }
-  .image-mobile {
-    display: none;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10em 15em;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
+    height: 65vh;
+    width: 65vw;
+    /* display: inline-block; */
     border: 2px solid black;
-    height: 40%;
-    object-fit: scale-down;
   }
-  .desktop-img {
+
+  .img-container {
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+  }
+
+  .image-mobile {
     display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3rem;
+    font-size: small;
+    /* margin: 1em 1.2em; */
+    /* border: 1px solid blue; */
+  }
+
+  h1 {
+    /* margin: .5em .4em; */
+    /* padding: 5%; */
+    /* border: 2px solid green; */
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .perfume-description {
+    /* margin: 1.2em; */
+    /* border: 2px solid black; */
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .price-container {
+    /* margin: 1em 1em 0; */
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+  }
+
+  .sale-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-family: "Fraunces", serif;
+    margin: 0;
+    /* border: 2px solid red; */
+  }
+
+  .original-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.7em;
+    font-family: "Montserrat", serif;
+    text-decoration: line-through;
+    margin: 1.2em;
+    /* padding: 5% 0; */
+    /* border: 2px solid green; */
+  }
+
+  .block {
+  display: block;
+  /* margin: 1em 1.2em .5em; */
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 14px 28px;
+  /* font-size: 16px; */
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Montserrat", serif;
+   border: 2px solid green;
+  }
+  footer {
+    margin: 0 1em;
   }
 }
